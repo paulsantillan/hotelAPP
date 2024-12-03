@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list class="profile-container">
+    <ion-item lines="none" class="profile-header">
+      <ion-avatar slot="start">
+
+      </ion-avatar>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input value="{{profile.user.user}}"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input value="{{profile.user.email}}" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">pais</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">ciudad</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">birthday</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">direccion</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

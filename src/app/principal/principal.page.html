@@ -1,0 +1,143 @@
+
+
+<ion-content [fullscreen]="true" class="transport-page">
+  <ion-tabs>
+    <ion-tab tab="home">
+      <div id="home-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>¿Qué habitación deseas?</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+
+          <!-- Barra de búsqueda -->
+          <ion-searchbar placeholder="Buscar..."></ion-searchbar>
+
+          <!-- Pestañas de categorías -->
+          <div class="tabs-container">
+            <ion-segment value="estandar">
+              <ion-segment-button value="estandar">
+                <ion-label>estandar</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value="suites">
+                <ion-label>suites</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value="familia">
+                <ion-label>familia</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+          </div>
+
+          <!-- Tarjeta de habitación -->
+          <div class="rooms-container">
+            <ion-card class="ion-card">
+              <img class="img" src="../../assets/simple.jpg" alt="Habitación estándar" />
+              <ion-card-content>
+                <h2>simple</h2>
+                <p>$10</p>
+                <ion-button expand="block" class="cart-button">
+                  <ion-icon slot="start" name="cart-outline"></ion-icon>
+                  Agregar al carrito
+                </ion-button>
+
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="ion-card">
+              <img class="img" src="../../assets/dobles.jpg" alt="Habitación estándar doble" />
+              <ion-card-content>
+                <h2>dobles</h2>
+                <p>$15</p>
+                <ion-button expand="block" class="cart-button">
+                  <ion-icon slot="start" name="cart-outline"></ion-icon>
+                  Agregar al carrito
+                </ion-button>
+              </ion-card-content>
+            </ion-card>
+          </div>
+
+
+
+
+      </div>
+    </ion-tab>
+    <ion-tab tab="radio">
+      <div id="radio-page">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>carrito</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <div class="example-content"></div>
+        </ion-content>
+      </div>
+    </ion-tab>
+
+
+    <ion-tab tab="search">
+      <div  id="search-page">
+        <ion-header>
+          <ion-toolbar color="light">
+            <ion-title class="perfil-title">Perfil</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+      </div>
+      <ion-content>
+        <ion-content>
+          <ion-list lines="full" class="custom-list">
+            <ion-item button routerLink="/perfil" class="custom-item">
+              <ion-label>
+                <h2>Editar Perfil</h2>
+              </ion-label>
+              <ion-icon slot="home-outline" name="chevron-forward-outline"></ion-icon>
+            </ion-item>
+
+            <ion-item button class="custom-item">
+              <ion-label>
+                <h2>Mis Reservas</h2>
+              </ion-label>
+              <ion-icon slot="home" name="chevron-forward-outline"></ion-icon>
+            </ion-item>
+
+            <ion-item button class="custom-item">
+              <ion-label>
+                <h2>Historial</h2>
+              </ion-label>
+              <ion-icon slot="home" name="chevron-forward-outline"></ion-icon>
+            </ion-item>
+
+            <ion-item button  class="custom-item">
+              <ion-label>
+                <h2>Versión</h2>
+              </ion-label>
+              <ion-icon slot="home" name="chevron-forward-outline"></ion-icon>
+            </ion-item>
+
+            <ion-item button class="custom-item">
+              <ion-label>
+                <h2>Política de Privacidad</h2>
+              </ion-label>
+              <ion-icon slot="home" name="chevron-forward-outline"></ion-icon>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-content>
+    </ion-tab>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline"></ion-icon>
+        inicio
+      </ion-tab-button>
+      <ion-tab-button tab="radio">
+        <ion-icon name="cart-outline"></ion-icon>       carrito
+      </ion-tab-button>
+
+      <ion-tab-button  tab="search">
+        <ion-icon  name="person-circle-outline"></ion-icon>        perfil
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

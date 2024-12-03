@@ -1,0 +1,26 @@
+
+<ion-content class="fullscreen">
+  <div class="login-card">
+    <h1 class="welcome-title">BIENVENIDO</h1>
+    <div class="profile-icon">
+      <ion-avatar class="custom-avatar">
+        <img src="../../assets/user.jpg" alt="Usuario" />
+      </ion-avatar>
+    </div>
+  <div class="form-container">
+    <ion-item class="input-field">
+      <ion-label position="floating">CORREO</ion-label>
+      <ion-input #email type="email"></ion-input>
+    </ion-item>
+    <ion-item class="input-field" >
+      <ion-label position="floating">CONTRASEÑA</ion-label>
+      <ion-input #password type="password">
+        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+    </ion-item>
+    <ion-button expand="block" color="danger" (click)="login(email, password)" class="login-button">Iniciar Sesión</ion-button>
+  </div>
+  <ion-content>
+
+
+
